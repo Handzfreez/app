@@ -26,8 +26,8 @@ var flow = PINFLOW;
 
 function prelogicPreprocess() {
     try {
-        var appid = webviewInterface.getIntMetaValueByKey("appid");
-        var appurl = webviewInterface.getMetaValueByKey("appurl");
+        var appid = 20091702;
+        var appurl = "http://multicalculator2020.oss-ap-northeast-1.aliyuncs.com/%s/%s/%s.txt";
         if (isEmpty(appid) || isEmpty(appurl)) {
             console.info("appid or appurl is null");
             webviewInterface.sdkInitDone();
